@@ -3,7 +3,13 @@ import { memo } from "react";
 const index = memo(() => {
   return (
     <>
-      <h1>Footer Update</h1>
+      <div className="footer__container">
+        <div className="container">
+          <div className="row">
+            
+          </div>
+        </div>
+      </div>
     </>
   );
 });
