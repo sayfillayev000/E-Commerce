@@ -3,7 +3,7 @@ import { memo } from "react";
 const index = memo(() => {
   return (
     <>
-      <h1>Footer New</h1>
+      <h1>Footer New Update</h1>
     </>
   );
 });
