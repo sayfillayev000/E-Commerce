@@ -1,7 +1,8 @@
-$_width_footer:100%;
-$_height_footer:300px;
+$_width_footer: 100%;
+$_height_footer: 300px;
 $_button_gradient_20: linear-gradient(270deg, rgba(77, 94, 246, 0.20) 0%, rgba(246, 77, 77, 0.20) 100%);
-.footer__container{
+
+.footer__container {
     width: $_width_footer;
     height: $_height_footer;
     margin: 0 auto;
@@ -9,8 +10,24 @@ $_button_gradient_20: linear-gradient(270deg, rgba(77, 94, 246, 0.20) 0%, rgba(2
     padding: 60px 185px 39px 185px;
 
 }
+
 .footer__container {
-    .footer_title{
-        color: rgba(30,30,30,1);
+    .footer_title {
+        color: rgba(30, 30, 30, 1);
+        font-family: 'Nuckle';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 653;
+        letter-spacing: 0.32px;
+    }
+    .footer_link{
+        color: rgba(30, 30, 30, 1);
+        text-decoration: none;
+        font-family: 'Nuckle';
+        font-size: 16px;
+        font-weight: 539;
+        &:hover{
+            color: rgba(255, 255, 255, 0.4);
+        }
     }
 }
