@@ -4,10 +4,22 @@ import TelegramIcon from "./src/Telegram.png";
 import TikTokIcon from "./src/TikTok.png";
 
 const Icons = [
-  FacebookIcon,
-  TelegramIcon,
-  InstagramIcon,
-  TikTokIcon,
-];
+  {
+    icon:FacebookIcon,
+    link:"https://www.facebook.com/nextstore.uz",
+  },
+  {
+    icon:InstagramIcon,
+    link:"https://www.instagram.com/nextstore.uz",
+  },
+  {
+    icon:TikTokIcon,
+    link:"https://www.tiktok.com/@nextstore.uz",
+  },
+  {
+    icon:TelegramIcon,
+    link:"https://t.me/nextstore.uz",
+  }
+]
 
 export default Icons;

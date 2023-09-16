@@ -40,21 +40,24 @@ const index = memo(() => {
               <div className="col-sm col offset-md-1 nav-information-service">
                 <h5 className="footer_title">Axborot Xizmati</h5>
                 <ul className="nav flex-column">
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 footer_link">contact@nextstore.uz</a></li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 footer_link">contact@nextstore.uz</a>
+                    </li>
                   <li className="nav-item mb-2">
                     <a href="#" className="nav-link p-0 footer_link">+998 99 999 99 99</a>
                     <a href="#" className="nav-link p-0 footer_link">+998 99 999 99 99</a>
                   </li>
-                  <li className="nav-item mb-2"><a href="#" className="nav-link p-0 footer_link">
-                    Sag’bon 186, Olmazor tumani, Toshkent, O'zbekiston
-                  </a></li>
+                  <li className="nav-item mb-2">
+                    <a href="#" className="nav-link p-0 footer_link">
+                    Sag’bon 186, Olmazor tumani, Toshkent, O'zbekiston</a>
+                  </li>
                 </ul>
                 <ul className="nav flex-row information__service_icons">
                   {
                     Icons.map((icons, index) => (
                       <li className="nav-item" key={index}>
-                        <a href="" className="nav-link p-0">
-                          <img width={35} src={icons} alt="" />
+                        <a href={icons.link} className="nav-link p-0">
+                          <img width={35} src={icons.icon} alt="" />
                         </a>
                       </li>
                     ))

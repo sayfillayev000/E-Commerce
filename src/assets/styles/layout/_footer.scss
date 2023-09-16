@@ -12,6 +12,9 @@
     }
     .information__service_icons {
         gap: 26px;
+        .nav-link:hover{
+            color: rgba(30, 30, 30, .5)!important;
+        }
         img{
             border-radius: .5rem;
             transition: all .2s ease-in-out;
