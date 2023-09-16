@@ -64,25 +64,6 @@ const index = memo(() => {
                   }
                 </ul>
               </div>
-
-              {/* <div className="footer__menu">
-              <ul className="footer__menu_list">
-                <h5 className="footer_title">Hujjatlar</h5>
-                <li className="_menu_item">
-                  <a className="_menu_link" href="#">Umumiy Shartlar</a>
-                </li>
-                <li className="_menu_item">
-                  <a className="_menu_link" href="#">Ofertalar arxivi</a>
-                </li>
-                <li className="_menu_item">
-                  <a className="_menu_link" href="#">Nizom</a>
-                </li>
-                <li className="_menu_item">
-                  <a className="_menu_link" href="#">Guvohnoma</a>
-                </li>
-              </ul>
-
-            </div> */}
             </div>
             <div className="row">
               <div className="footer__bottom">
