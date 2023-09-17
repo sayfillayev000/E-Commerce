@@ -59,7 +59,7 @@ const App = () => {
   ]);
   return (
     <>
-      <Suspense fal lback={<Loader />}>
+      <Suspense fallback={<Loader />}>
         <RouterProvider router={routes} />
       </Suspense>
     </>
