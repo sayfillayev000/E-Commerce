@@ -1,8 +1,8 @@
 import { memo } from "react";
-const index = memo(({children}) => {
+const index = memo(() => {
   return (
     <>
-      <h1>Card</h1>
+     Card
     </>
   );
 });

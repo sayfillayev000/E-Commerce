@@ -1,3 +1,3 @@
 import Card from "./card";
-
-export { Card };
+import _Card from "./_card";
+export { Card,_Card };

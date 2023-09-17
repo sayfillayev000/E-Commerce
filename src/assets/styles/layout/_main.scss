@@ -1,0 +1,31 @@
+.brands {
+    background-color: $_background_secodary;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 60px 150px 30px 150px;
+    .brands__container {
+        width: 100%;
+        .brands__main {
+            .row {
+                gap: 20px;
+                margin: 0;
+            }
+        }
+    }
+
+}
+@media screen and (max-width:$sm) {
+    .brands{
+        padding: 30px  20px 0;
+        .brands__container {
+            .brands__main{
+                .row{
+                    gap:10px;
+                }
+            }
+        }
+    }
+    
+}
