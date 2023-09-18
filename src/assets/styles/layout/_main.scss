@@ -1,31 +1,77 @@
-.brands {
+.brands,.magazines {
     background-color: $_background_secodary;
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     padding: 60px 150px 30px 150px;
-    .brands__container {
+
+    .brands__container,.magazines__container {
         width: 100%;
-        .brands__main {
+        .title {
+            color: var(--text-main, #1E1E1E);
+            /* medium 28 */
+            font-family: "Nuckle";
+            font-size: 20px;
+            font-weight: 400;
+            padding: 20px 0;
+        }
+
+        .brands__main,.magazines__main {
             .row {
                 gap: 20px;
                 margin: 0;
             }
         }
     }
-
 }
-@media screen and (max-width:$sm) {
-    .brands{
-        padding: 30px  20px 0;
-        .brands__container {
-            .brands__main{
-                .row{
-                    gap:10px;
+
+@media only screen and (max-width:$sm) {
+    .brands,.magazines {
+        padding: 60px 20px 30px 20px;
+        .brands__container,.magazines__container {
+            .brands__main,.magazines__main {
+                .row {
+                    gap: 20px!important; //for xxl max size
                 }
             }
         }
     }
-    
 }
+
+@media only screen and (max-width:$md) {
+    .brands,.magazines {
+        padding: 60px 30px 30px 30px;
+    }
+}
+
+@media only screen and (max-width:$lg) {
+    .brands,.magazines {
+        padding: 60px 40px 30px 40px;
+    }
+}
+
+@media screen and (max-width:$xxl) {
+    .brandsm,.magazines {
+        .brands__container,.magazines__container {
+            .brands__main,.magazines__main {
+                .row {
+                    gap: 20px; //for xxl max size
+                }
+            }
+        }
+    }
+}
+//slider code 
+
+.slider{
+    width: 100%;
+    height: 160px;
+    flex-shrink: 0;
+    padding: 60px 150px 30px 150px;
+    background-color: $_background_secodary;
+    .slide{
+        width: 100%;
+        border: 1px solid;
+    }
+}
+

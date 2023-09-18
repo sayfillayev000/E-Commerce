@@ -6,11 +6,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100%/7);
+    // width: calc(100%/7);
     padding: 2px 10px;
     img {
         width: 70px;
         height: 70px;
     }
 }
-  
+
+@media screen and (max-width : $xxl) {
+    .card {
+        width: calc(100%/6 - 20px);
+    }
+}
+
+@media screen and (max-width : $xl) {
+    .card {
+        width: calc(100%/6 - 20px);
+    }
+}
+
+@media screen and (max-width : $lg) {
+    .card {
+        width: calc(100%/5 - 20px);
+    }
+}
+
+@media screen and (max-width : $md) {
+    .card {
+        width: calc(33% - 20px);
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .card {
+        width: calc(50% - 10px); // Assuming $sm is the breakpoint and 20px is the desired margin
+    }
+}

@@ -1,65 +1,104 @@
 // rasmlarni olish bo'yicha universal variant
-import Acer from './src/Acer.png';
-import Apple from './src/Apple.png';
-import Asus from './src/ASUS.png';
-import HP from './src/HP.png';
-import MI from './src/MI.png';
-import Samsung from './src/SAMSUNG.png'
-import MICROStar  from "./src/MICROSTAR.png"
-import NOIMAGE from "./src/NOIMAGE.png"
-import VIVO from './src/VIVO.png';
-
+import Acer from "./src/Acer.png";
+import Apple from "./src/Apple.png";
+import Asus from "./src/ASUS.png";
+import HP from "./src/HP.png";
+import MI from "./src/MI.png";
+import Samsung from "./src/SAMSUNG.png";
+import MICROStar from "./src/MICROSTAR.png";
+import VIVO from "./src/VIVO.png";
+import Texnomart from './src/Texnomart.png'
+import Sandiq from './src/Sandiq.png'
+import Elmakon from './src/Elmakon.png'
+import GoodZone from './src/GoodZone.png'
+import MediaPark from "./src/MediaPark.png"
 export const Brands = [
+  {
+    image: Acer,
+    name: "Acer",
+  },
+  {
+    image: Apple,
+    name: "Apple",
+  },
+  {
+    image: Asus,
+    name: "Asus",
+  },
+  {
+    image: HP,
+    name: "HP",
+  },
+  {
+    image: MI,
+    name: "MI",
+  },
+  {
+    image: Samsung,
+    name: "Samsung",
+  },
+  {
+    image: MICROStar,
+    name: "MICROSTAR",
+  },
+  {
+    image: VIVO,
+    name: "VIVO",
+  },
+  {
+    image: Apple,
+    name: "Aplle",
+  },
+  {
+    image: "",
+    name: "Aplle",
+  },
+  {
+    image: "",
+    name: "Aplle",
+  },
+  {
+    image: "",
+    name: "Aplle",
+  },
+  {
+    image: "",
+    name: "Aplle",
+  },
+];
+
+export const Magazines = [
     {
-        image: Acer,
-        name:"Acer",
+      image:Elmakon,
+      name:"Elmakon"  
     },
     {
-        image: Apple,
-        name:"Apple",
+      image:Texnomart,
+      name:"Texnomart"
     },
     {
-        image: Asus,
-        name:"Asus",
+      image:MediaPark,
+      name:"MediaPark"
     },
     {
-        image: HP,
-        name:"HP",
+      image:Sandiq,
+      name:"Sandiq"
     },
     {
-        image: MI,
-        name:"MI",
+      image:GoodZone,
+      name:"GoodZone"
     },
     {
-        image: Samsung,
-        name:"Samsung",
+      image: "",
+      name: "Aplle",
     },
     {
-        image: MICROStar,
-        name:"MICROSTAR",
+      image: "",
+      name: "Aplle",
     },
     {
-        image: VIVO,
-        name:"VIVO",
+      image: "",
+      name: "Aplle",
     },
-    {
-        image:"",
-        name:"Aplle"
-    },
-    {
-        image:"",
-        name:"Aplle"
-    },
-    {
-        image:"",
-        name:"Aplle"
-    },
-    {
-        image:"",
-        name:"Aplle"
-    },
-    {
-        image:"",
-        name:"Aplle"
-    }
-]
+];
+
