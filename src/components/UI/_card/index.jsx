@@ -5,7 +5,7 @@ import '../../../assets/styles/components/_card.scss';
 const index = memo(({image,name}) => {
   return (
     <>  
-      <div className="card col-sm-5 col-lg-6 col-md-5">
+      <div className="card col-lg-2">
         <img src={image ? image : NOIMAGE} alt={name} />
       </div>
     </>
