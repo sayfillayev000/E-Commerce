@@ -1,6 +1,8 @@
 .footer__container {
-    margin: 0;
+    margin: 0 auto;
     width: $_width_footer;
+    max-width: $xxl;
+    min-width: $sm;
     height: $_height_footer;
     background-image: $_button_gradient_20;
     padding: 60px 150px 30px 150px;
