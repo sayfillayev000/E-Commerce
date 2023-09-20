@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import _Slide from "../../fields/slide";
-const Index = ({Slider}) => {
+const Index = ({ Slider }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevClick = () => {
@@ -16,41 +16,48 @@ const Index = ({Slider}) => {
   };
   return (
     <>
-      <div className="carousel">      
-      <div
-        id="carouselAd"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          {Slider.map((slide, index) => (
-            <_Slide
-              image={slide}
-              key={index}
-              className={`carousel-item ${index === currentIndex ? "active" : ""
-                }`}
-            />
-          ))}
-        </div>
+      <div className="carousel">
+        {/* Carousel block  */}
         <div
-          className="carousel-control-prev prev"
-          data-bs-target="#carouselAd"
-          data-bs-slide="prev"
-          onClick={prevClick}
+          id="carouselAd"
+          className="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-pause="false"
+          data-bs-interval = "false"
         >
-          <i className="fa fa-angle-left"></i>
-          <span className="visually-hidden">Previous</span>
+          {/* <!-- Wrapper -->  */}
+          <div className="carousel-inner">
+            {Slider.map((slide, index) => (
+              <_Slide
+                image={slide}
+                key={index}
+                className={`carousel-item ${index === currentIndex ? "active" : ""
+                  }`}
+              />
+            ))}
+          </div>
+          {/* <!-- Controls -->  */}
+          <div
+            className="carousel-control-prev prev"
+            data-bs-target="#carouselAd"
+            data-bs-slide="prev"
+            onClick={prevClick}
+          >
+            <i className="fa fa-angle-left"></i>
+            <span className="visually-hidden">Previous</span>
+          </div>
+          <div
+            className="carousel-control-next next"
+            data-bs-target="#carouselAd"
+            data-bs-slide="next"
+            onClick={nextClick}
+          >
+            <i className="fa fa-angle-right"></i>
+            <span className="visually-hidden">Next</span>
+          </div>
+          {/* <!-- Controls end -->*/}
         </div>
-        <div
-          className="carousel-control-next next"
-          data-bs-target="#carouselAd"
-          data-bs-slide="next"
-          onClick={nextClick}
-        >
-          <i className="fa fa-angle-right"></i>
-          <span className="visually-hidden">Next</span>
-        </div>
-      </div>
+        {/* <!-- Indicators --> */}
         <div className="indicators">
           {Slider.map((_, index) => (
             <div
@@ -64,8 +71,8 @@ const Index = ({Slider}) => {
             ></div>
           ))}
         </div>
-      </div>   
-      </>
+      </div>
+    </>
   );
 };
 
