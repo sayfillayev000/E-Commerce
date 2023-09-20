@@ -1,4 +1,4 @@
 import Input from "./input";
 import Button from "./button";
-import Slide from "./slide";
-export { Input, Button , Slide };
+import _Slide from "./slide";
+export { Input, Button , _Slide };

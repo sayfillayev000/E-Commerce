@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import { _Card, Carousel } from "../../components/UI"
-import { Brands, Magazines } from "../../assets/images/png"
+import { Brands, Magazines,Slider } from "../../assets/images/png"
+
 const index = memo(() => {
   return (
     <>
@@ -20,7 +21,7 @@ const index = memo(() => {
           </div>
         </section>
         <section className="slider text-center">
-          <Carousel />
+          <Carousel Slider={Slider}/>
         </section>
         <section className="magazines">
           <div className="magazines__container">

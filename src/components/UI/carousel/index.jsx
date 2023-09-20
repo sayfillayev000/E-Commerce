@@ -1,62 +1,72 @@
-import React, { useState, useEffect } from 'react';
-// import '../../../assets/styles/components/_carousel.scss';
-import Slide from '../../fields/slide';
-import { Slider } from '../../../assets/images/png';
-
-const index = () => {
+import React, { useState } from "react";
+import _Slide from "../../fields/slide";
+const Index = ({Slider}) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevClick = () => {
-    if (currentIndex === 0) {
-      setCurrentIndex(Slider.length - 1);
-    } else {
-      setCurrentIndex(currentIndex - 1);
-    }
+    setCurrentIndex(currentIndex === 0 ? Slider.length - 1 : currentIndex - 1);
   };
 
   const nextClick = () => {
-    if (currentIndex === Slider.length - 1) {
-      setCurrentIndex(0);
-    } else {
-      setCurrentIndex(currentIndex + 1);
-    }
+    setCurrentIndex(currentIndex === Slider.length - 1 ? 0 : currentIndex + 1);
   };
 
   const indicatorClick = (index) => {
     setCurrentIndex(index);
   };
-
-  useEffect(() => {
-    // Your effect code here
-  }, [currentIndex]);
-
   return (
-    <div className="carousel">
-      <div className="carousel_row">
-          <Slide
-            className={`${index === currentIndex ? 'active' : ''}`}
-            image={Slider[currentIndex]}
-            key={index}
-          />
+    <>
+      <div className="carousel">      
+      <div
+        id="carouselAd"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          {Slider.map((slide, index) => (
+            <_Slide
+              image={slide}
+              key={index}
+              className={`carousel-item ${index === currentIndex ? "active" : ""
+                }`}
+            />
+          ))}
+        </div>
+        <div
+          className="carousel-control-prev prev"
+          data-bs-target="#carouselAd"
+          data-bs-slide="prev"
+          onClick={prevClick}
+        >
+          <i className="fa fa-angle-left"></i>
+          <span className="visually-hidden">Previous</span>
+        </div>
+        <div
+          className="carousel-control-next next"
+          data-bs-target="#carouselAd"
+          data-bs-slide="next"
+          onClick={nextClick}
+        >
+          <i className="fa fa-angle-right"></i>
+          <span className="visually-hidden">Next</span>
+        </div>
       </div>
-
-      <div className="prev" onClick={prevClick}>
-        <i className="fa fa-angle-left"></i>
-      </div>
-      <div className="next" onClick={nextClick}>
-        <i className="fa fa-angle-right"></i>
-      </div>
-      <div className="indicators">
-        {Slider.map((_, index) => (
-          <div
-            className={`indicator ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => indicatorClick(index)}
-            key={index}
-          ></div>
-        ))}
-      </div>
-    </div>
+        <div className="indicators">
+          {Slider.map((_, index) => (
+            <div
+              data-bs-target="#carouselAd"
+              data-bs-slide-to={index.toString()}
+              onClick={() => indicatorClick(index)}
+              className={`indicator ${index === currentIndex ? "active" : ""}`}
+              aria-current={index === currentIndex ? "true" : "false"}
+              aria-label={`Slide ${index + 1}`}
+              key={index}
+            ></div>
+          ))}
+        </div>
+      </div>   
+      </>
   );
 };
 
-export default index;
+export default Index;
