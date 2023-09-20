@@ -1,3 +1,4 @@
 import Card from "./card";
 import _Card from "./_card";
-export { Card,_Card };
+import index from './carousel'
+export { Card,_Card,index as Carousel };

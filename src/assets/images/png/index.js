@@ -12,6 +12,8 @@ import Sandiq from './src/Sandiq.png'
 import Elmakon from './src/Elmakon.png'
 import GoodZone from './src/GoodZone.png'
 import MediaPark from "./src/MediaPark.png"
+import AD from "./src/AD.png"
+import AD2 from "./src/AD2.png"
 export const Brands = [
   {
     image: Acer,
@@ -102,3 +104,4 @@ export const Magazines = [
     },
 ];
 
+export const Slider = [AD,AD2,AD]

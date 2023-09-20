@@ -1,8 +1,10 @@
-.container {
+.base_container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 40px;
-  max-width: 1440px;
+  max-width: $xxl;
+  min-width: $sm;
+  box-sizing: border-box;
+  background-color: $_background_secodary;
 }
 
 

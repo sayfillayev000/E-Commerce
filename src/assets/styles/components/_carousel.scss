@@ -1,0 +1,65 @@
+@import "slide";
+@import '../base/index';
+
+.carousel {
+    width: 100%;
+    border-radius: 20px;
+    position: relative;
+    .carousel_row{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+        gap: 20px;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar; 
+    }
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &[class~="next"] {
+            right: -40px;
+            background: $_button_gradient;
+            color: #fff;
+        }
+
+        &[class~="prev"] {
+            left: -40px;
+            color: #000;
+            background: $_button_gradient_20;
+        }
+    }
+
+    .indicators {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        margin: 10px auto 0;
+        flex-direction: row;
+
+        .indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: $_button_gradient_20;
+            cursor: pointer;
+            &.active{
+               background: $_button_gradient; 
+            }
+        }
+    }
+}
+

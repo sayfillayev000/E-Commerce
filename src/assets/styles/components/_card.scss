@@ -1,4 +1,5 @@
 @import "../base/index";
+
 .card {
     cursor: pointer;
     background-color: #fff;
@@ -15,32 +16,36 @@
     }
 }
 
+
+//responsive code
+// for xxl size monitor 
 @media screen and (max-width : $xxl) {
     .card {
         width: calc(100%/6 - 20px);
     }
 }
-
+// for xl size monitor
 @media screen and (max-width : $xl) {
     .card {
         width: calc(100%/6 - 20px);
     }
 }
-
+// for lg size monitor
 @media screen and (max-width : $lg) {
     .card {
         width: calc(100%/5 - 20px);
     }
 }
-
+// for md size monitor
 @media screen and (max-width : $md) {
     .card {
         width: calc(33% - 20px);
     }
 }
-
+// for sm size monitor
 @media screen and (max-width: $sm) {
     .card {
         width: calc(50% - 10px); // Assuming $sm is the breakpoint and 20px is the desired margin
     }
 }
+// end of responsive
