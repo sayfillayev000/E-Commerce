@@ -1,8 +1,8 @@
 import React from 'react'
-const index = ({image, name ,index,className}) => {
+const index = ({image,className}) => {
   return (
     <div className={"slide "+className}>
-      <img src={image} alt={name} index={index}/>
+      {image ? <img src={image} /> : <div className='no-image'>Bo'sh joy</div>}
     </div>
   )
 }

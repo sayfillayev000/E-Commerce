@@ -1,8 +1,27 @@
 .slide {
     width: 100%;
     height: 100%;
-        img {
+
+    img {
         width: auto;
         border-radius: 20px;
+    }
+
+    .no-image {
+        width: 100%;
+        padding: 40px;
+        text-align: center;
+        /* Regular 16 */
+        font-family: Nuckle;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 539;
+        line-height: normal;
+        letter-spacing: 0.16px;
+        background: $_button_gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
     }
 }

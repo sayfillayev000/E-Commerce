@@ -104,4 +104,4 @@ export const Magazines = [
     },
 ];
 
-export const Slider = [AD,AD2,AD]
+export const Slider = [AD,AD2,AD,""]
