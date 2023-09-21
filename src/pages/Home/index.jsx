@@ -1,6 +1,7 @@
 import React, { memo } from "react";
 import { _Card, Carousel } from "../../components/UI"
 import { Brands, Magazines,Slider } from "../../assets/images/png"
+import { Loader } from "../../components/layouts";
 
 const index = memo(() => {
   return (
