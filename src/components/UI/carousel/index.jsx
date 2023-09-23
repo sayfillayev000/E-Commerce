@@ -21,9 +21,8 @@ const Index = ({ Slider }) => {
         <div
           id="carouselAd"
           className="carousel slide"
-          data-bs-ride="carousel"
-          data-bs-pause="false"
-          data-bs-interval = "false"
+          data-bs-ride="false"
+          data-bs-pause="hover"
         >
           {/* <!-- Wrapper -->  */}
           <div className="carousel-inner">
@@ -31,8 +30,7 @@ const Index = ({ Slider }) => {
               <_Slide
                 image={slide}
                 key={index}
-                className={`carousel-item ${index === currentIndex ? "active" : ""
-                  }`}
+                className={`carousel-item ${index === currentIndex ? "active" : ""}`}
               />
             ))}
           </div>
